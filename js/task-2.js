@@ -35,10 +35,7 @@ for (let image of images) {
   img.alt = image.alt;
   item.append(img);
   items.push(item);
-  // gallery.insertAdjacentHTML(
-  //   "beforeend",
-  //   `<li><img src="${image.url}" alt="${image.alt}" /></li>`
-  // );
+  
 }
 
 gallery.append(...items);
