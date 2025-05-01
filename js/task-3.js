@@ -1,9 +1,15 @@
-const input = document.querySelector("#name-input");
-const output = document.querySelector("#name-output");
+const inputElem = document.querySelector('input');
+const spanEl = document.querySelector('span');
 
-const inputHandler = (event) => {
-  const value = event.currentTarget.value.trim();
-  output.textContent = value !== "" ? value : "Anonymous";
+inputElem.addEventListener('input', handleUserNameInput);
+
+function handleUserNameInput(e) {
+    const userValue = e.target.value.trim();
+    
+    if (userValue === '') {
+        spanEl.textContent = 'Anonymous';
+    }
+    else {
+        spanEl.textContent = userValue;
+    }
 };
-
-input.addEventListener("input", inputHandler);
