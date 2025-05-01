@@ -12,9 +12,13 @@ function handleUserForm(e) {
     }
     
 
-    if (userEmail === '' || userPassword === '') {
+    if (userEmail.trim() === '' || userPassword.trim() === '') {
         alert('All form fields must be filled in');
     }
-    console.log(" handleUserForm data:", data);
-    e.target.reset();
+    else {
+        console.log(" handleUserForm data:", data);
+        e.target.reset();
+    }
+    
+    
 }

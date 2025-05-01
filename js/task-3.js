@@ -1,5 +1,5 @@
-const inputElem = document.querySelector('input');
-const spanEl = document.querySelector('span');
+const inputElem = document.querySelector('#name-input');
+const spanEl = document.querySelector('#name-output');
 
 inputElem.addEventListener('input', handleUserNameInput);
 
